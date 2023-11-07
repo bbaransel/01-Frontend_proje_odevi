@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -178,4 +179,163 @@ header {
 
 .hr1 {
     margin-top: 15px;
+    width: 100vw;
+}
+
+main {
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderList {
+    width: 1200px;
+}
+
+.sliderList ul {
+    display: flex;
+    overflow-x: scroll;
+    column-gap: 50px;
+}
+
+.sliderList ul li {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderList ul li a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.sliderList ul li a:hover {
+    color: var(--bg-warning);
+}
+
+.sliderList ul li a img {
+    width: 68px;
+    height: 68px;
+    border: .5px solid gray;
+    border-radius: 50%;
+}
+
+.sliderList ul li a img:hover {
+    border: 1px solid var(--bg-warning);
+}
+
+.mainCards {
+    margin-top: 20px;
+    width: 1200px;
+}
+
+.mainCards ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainCards ul li {
+    width: 23%;
+    height: 35px;
+}
+
+.mainCards ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#card-li1 a {
+    color: rgb(1, 71, 1);
+    background-color: rgb(178, 245, 162, .3);
+}
+
+#card-li2 a {
+    color: rgb(173, 93, 1);
+    background-color: rgb(247, 232, 205);
+}
+
+#card-li3 a {
+    color: var(--text-secondary);
+    background-color: rgb(245, 191, 218);
+}
+
+#card-li4 a {
+    color: rgb(160, 66, 4);
+    background-color: rgb(247, 232, 205);
+}
+
+
+
+
+
+
+footer {
+    padding: 50px 0 0 0;
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    bottom: 0;
+}
+
+.footerList-wrap {
+    width: 1200px;
+}
+
+.footerList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerList div {
+    width: 25%;
+}
+
+.footerList div>a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.footerList a:hover {
+    text-decoration: underline;
+}
+
+.footerList ul {
+    line-height: 35px;
+}
+
+.footerList ul li a {
+    color: white;
+}
+
+.copyright {
+    width: 100vw;
+    font-size: 11px;
+    color: white;
+    bottom: 0;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    margin-top: 50px;
 }
