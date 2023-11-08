@@ -5,7 +5,7 @@
     --bg-secondary: #48a9c5;
     --bg-success: #009f4d;
     --bg-danger: #e4002b;
-    --bg-warning: #fe5000;
+    --bg-warning: #FF671B;
     --bg-gray: #52565e;
 
     --text-dark: #4298b5;
@@ -18,4 +18,8 @@
     --text-gray: #f3f4f7;
     --text-white: whitesmoke;
     --text-black: black;
+
+    --trendyol-black: #231F20;
+    --trendyol-white: #FFFCFB;
+    --trendyol-light: #FFC4A7;
 }
