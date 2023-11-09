@@ -42,19 +42,18 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* position: sticky; */
 
 }
 
 .headerTop {
     width: 1200px;
-    height: 20px;
-    display: block;
+    /* height: 20px; */
+    /* display: block; */
     z-index: 3;
 }
 
-.wrapper {}
-
-.wrapper ul {
+.wrapper {
     height: 15px;
     padding-top: 3px;
     float: right;
@@ -66,23 +65,25 @@ header {
     padding-left: 30px;
 }
 
-.wrapper ul li a {
+.wrapper li a {
     color: var(--text-black);
     font-size: 12px;
     line-height: 15px;
     opacity: .5;
 }
 
-.wrapper ul li a:hover {
+.wrapper li a:hover {
     opacity: .8;
 }
 
 .stickyHeader {
     width: 100vw;
+    height: 66px;
     background-color: white;
-    position: fixed;
-    padding-top: 20px;
-    z-index: 2;
+    position: sticky;
+    top: 0;
+    /* padding-top: 20px; */
+    /* z-index: 1000; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,9 +160,9 @@ header {
 .navbar {
     width: 1200px;
     height: 35px;
-    margin-top: 66px;
+    /* margin-top: 66px; */
     padding-top: 15px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .navbar ul {
