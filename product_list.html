@@ -12,105 +12,945 @@
 
 <body>
     <div class="container">
-        <header>
-            <div class="headerMain">
-                <div class="headerTop">
-                    <div class="wrapper">
-                        <ul>
-                            <li><a href="/">İndirim Kuponlarım</a></li>
-                            <li><a href="/"> Trendyol'da Satış Yap</a></li>
-                            <li><a href="/">Hakkımızda</a></li>
-                            <li><a href="/">Yardım & Destek</a></li>
-                        </ul>
-                    </div>
+        <div class="headerTop">
+            <ul class="wrapper">
+                <li><a href="/">İndirim Kuponlarım</a></li>
+                <li><a href="/"> Trendyol'da Satış Yap</a></li>
+                <li><a href="/">Hakkımızda</a></li>
+                <li><a href="/">Yardım & Destek</a></li>
+            </ul>
+        </div>
+        <div class="stickyHeader">
+            <div class="stickyHeader-wrap">
+                <div>
+                    <a href="/" class="logo tittle" id="logo"><img
+                            src="https://cdn.dsmcdn.com/web/production/ty-cumhuriyet-100-logo.svg" alt="Trendyol"></a>
                 </div>
-                <div class="stickyHeader">
-                    <div class="stickyHeader-wrap">
-                        <div class="stickyHeader-wrap2">
-                            <div>
-                                <a href="" class="logo tittle" id="logo"><img
-                                        src="https://cdn.dsmcdn.com/web/production/ty-cumhuriyet-100-logo.svg"
-                                        alt="Trendyol"></a>
-                            </div>
-                            <div class="input">
-                                <input type="search" maxlength="50" size="80" tabindex="1"
-                                    placeholder="Aradığınız ürün, kategori veya marka yazınız">
-                            </div>
-                            <div class="account-navbar">
-                                <div>
-                                    <ul>
-                                        <li><a href=""><i class="fa-regular fa-user"></i> Giriş Yap</a></li>
-                                        <li><a href=""><i class="fa-regular fa-heart"></i> Favorilerim</a></li>
-                                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sepetim</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                <div class="input">
+                    <input type="search" maxlength="50" size="80"
+                        placeholder="Aradığınız ürün, kategori veya marka yazınız">
+                    <button><i class="fa-solid fa-magnifying-glass" style="color: #FF671B;"></i></button>
+                </div>
+                <ul class="account-navbar">
+                    <li><a href="/"><i class="fa-regular fa-user"></i> Giriş Yap</a></li>
+                    <li><a href="/"><i class="fa-regular fa-heart"></i> Favorilerim</a></li>
+                    <li><a href="/shopping_cart.html"><i class="fa-solid fa-cart-shopping"></i> Sepetim</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/product_list.html">Kadın</a></li>
+                <li><a href="/product_list.html">Erkek</a></li>
+                <li><a href="/product_list.html">Anne & Çocuk</a></li>
+                <li><a href="/product_list.html">Ev & Mobilya</a></li>
+                <li><a href="/product_list.html">Süpermarket</a></li>
+                <li><a href="/product_list.html">Kozmetik</a></li>
+                <li><a href="/product_list.html">Ayakkabı & Çanta</a></li>
+                <li><a href="/product_list.html">Elektronik</a></li>
+                <li><a href="/product_list.html">Spor&Outdoor</a></li>
+                <li><a href="/product_list.html">Çok Satanlar <span>Yeni</span></a></li>
+                <li><a href="/product_list.html">Flaş Ürünler <span>Yeni</span></a></li>
+            </ul>
+        </nav>
+        <hr class="hr1">
+        <div class="cat-path">
+            <a href="/">Ana Sayfa</a> <i class="fa-solid fa-chevron-right"
+                style="color:var(--bg-warning); padding-left: 3px;"></i>
+            <a href="/">Erkek</a><i class="fa-solid fa-chevron-right"
+                style="color:var(--bg-warning); padding-left: 3px;"></i>
+            <a href="/">Ayakkabı</a><i class="fa-solid fa-chevron-right"
+                style="color:var(--bg-warning); padding-left: 3px;"></i>
+            <span style="font-weight:600 ;" href="#">Spor Ayakkabı</span>
+        </div>
+        <main>
+            <div class="productList-content">
+                <div class="contentLeft">
+                    <div class="cat-header">İlgili Kategoriler<i class="fa-solid fa-chevron-up"
+                            style="color:var(--bg-warning); padding: 5px; float: inline-end;"></i></div>
+                    <ul class="cat1">
+                        <li><a href="#">Sneaker</a></li>
+                        <li><a href="#">Outdoor Ayakkabı</a></li>
+                        <li><a href="#">Yürüyüş Ayakkabısı</a></li>
+                        <li><a href="#">Koşu & Antrenman Ayakkabısı</a></li>
+                        <li><a href="#">Basketbol Ayakkabısı</a></li>
+                        <li><a href="#">Fitness Ayakkabısı</a></li>
+                        <li><a href="#">Halı Saha Ayakkabısı</a></li>
+                        <li><a href="#">Krampon</a></li>
+                        <li><a href="#">Tenis Ayakkabısı</a></li>
+                        <li><a href="#">Voleybol Ayakkabısı</a></li>
+                    </ul>
+                    <div class="cat-header">Marka<i class="fa-solid fa-chevron-up"
+                            style="color:var(--bg-warning); padding: 5px; float: inline-end;"></i></div>
+
+                    <ul class="cat1">
+                        <input type="search" maxlength="20" size="24" placeholder=" Marka Ara">
+                        <li><a href="#">adidas</a></li>
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">Lumberjack</a></li>
+                        <li><a href="#">HUMMEL</a></li>
+                        <li><a href="#">Reebok</a></li>
+                        <li><a href="#">Skechers</a></li>
+                        <li><a href="#">New Balance</a></li>
+                        <li><a href="#">Kinetix</a></li>
+                        <li><a href="#">U.S. Polo Assn.</a></li>
+                        <li><a href="#">Slazenger</a></li>
+                        <li><a href="#">Jump</a></li>
+                        <li><a href="#">Lescon</a></li>
+                        <li><a href="#">Hammer Jack</a></li>
+                        <li><a href="#">Lotto</a></li>
+                        <li><a href="#">Lacoste</a></li>
+                        <li><a href="#">Under Armour</a></li>
+                    </ul>
+                    <div class="cat-header">Beden<i class="fa-solid fa-chevron-up"
+                            style="color:var(--bg-warning); padding: 5px; float: inline-end;"></i></div>
+                    <ul class="cat1">
+
+                        <input type="search" maxlength="20" size="24" placeholder=" Beden Ara">
+                        <li><a href="#">34-33</a></li>
+                        <li><a href="#">35-36 </a></li>
+                        <li><a href="#">36-37</a></li>
+                        <li><a href="#">37-38</a></li>
+                        <li><a href="#">38-39 </a></li>
+                        <li><a href="#">39-40</a></li>
+                        <li><a href="#">40-41</a></li>
+                        <li><a href="#">41-42</a></li>
+                        <li><a href="#">42-43</a></li>
+                        <li><a href="#">43-44</a></li>
+                        <li><a href="#">44-45</a></li>
+                        <li><a href="#">45-46</a></li>
+                        <li><a href="#">46-47</a></li>
+                        <li><a href="#">47-48 </a></li>
+                        <li><a href="#">48-49</a></li>
+                        <li><a href="#">49-50</a></li>
+                        <li><a href="#">50-51</a></li>
+                    </ul>
+                    <div class="cat-header">Cinsiyet<i class="fa-solid fa-chevron-up"
+                            style="color:var(--bg-warning); padding: 5px; float: inline-end;"></i></div>
+                    <ul class="cat2" id="cat2">
+                        <li><input type="checkbox"><a style="padding: 0 5px;" href="#">Erkek</a></li>
+                        <li><input type="checkbox"><a style="padding: 0 5px;" href="#">Kadın</a></li>
+                    </ul>
+                    <ul class="cat3">
+                        <li class="cat-header">Avantajlı Ürünler<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Renk<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Fiyat<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Kullanım Alanı<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Bağlama Şekli<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Dış Materyal<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Materyal<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Taban Tipi<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Topuk Boyu<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Ortam<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Desen<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Satıcı Tipi<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Fiyat Geçmişi<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Astar Materyali<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Saya Materyali<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                        <li class="cat-header">Ürün Değerlendirmesi<i class="fa-solid fa-chevron-down"
+                                style="color:var(--bg-gray); padding: 5px; float: inline-end;"></i></li>
+                    </ul>
+                </div>
+                <div class="contentRight">
+                    <div class="path-header">
+                        <span>
+                            <h2>"Erkek Spor Ayakkabı" araması için 100.000+ sonuç listeleniyor</h2>
+                        </span>
+                        <a href="#"
+                            style="width: 250px; display: flex; justify-content: space-between;
+                        align-items: center; border: 1px solid rgba(128, 128, 128, .4); padding: 10px 10px 10px 20px; border-radius: 5px;">
+                            <span style="opacity: .7;">Önerilen Sıralama </span><i
+                                class="fa-solid fa-arrow-right-arrow-left fa-rotate-90"
+                                style="color: var(--bg-warning); padding: 5px 10px;"></i>
+                        </a>
                     </div>
+                    <div class="tags">
+                        <a href="#" style="background-color: rgb(248, 226, 230, .5)"><i class="fa-solid fa-ticket"
+                                style="color: rgb(240, 23, 124);"></i>Kuponlu Ürünler</a>
+                        <a href="#" style="background-color: whitesmoke;"><i class="fa-solid fa-box"
+                                style="color: #333333;"></i>Kargo Bedava</a>
+                        <a href="#" style="background-color: rgba(187, 247, 182, 0.3);"><i
+                                class="fa-solid fa-truck-fast" style="color: #13c931;"></i>Hızlı Teslimat</a>
+                        <a href="#" style="background-color: rgba(247, 214, 182, 0.3);"><i class="fa-solid fa-star"
+                                style="color: #ecf000;"></i>Yüksek Puanlı Ürünler</a>
+                        <a href="#" style="background-color: rgba(182, 203, 247, 0.3);"><i class="fa-solid fa-shop"
+                                style="color: #0259ed;"></i>Yüksek Puanlı Satıcılar</a>
+                        <a href="#" style="background-color: rgba(247, 197, 182, 0.3);"><i
+                                class="fa-solid fa-tag fa-flip-horizontal"
+                                style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az Öde
+                        </a>
+
+                    </div>
+                    <ul class="productRow">
+                        <li><a href="/product.html" id="image1"></a>
+                            <a><span style="font-weight: 500;">Pro Hyper</span> Laci Erkek Rahat Günlük Sneaker</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(557)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 14 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="price">209,77 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image2"></a>
+                            <a><span style="font-weight:500 ;">Muggo</span>North Unisex Garantili Kışlık Trekking
+                                Outdoor Sneaker Ayakkabı</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(1584)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <!-- <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün
+                                En
+                                Düşük Fiyatı!</a> -->
+                            <a class="priceLeft"><span class="price" style="color: var(--bg-warning);">399,90
+                                    TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image3"></a>
+                            <a><span style="font-weight: 500;">Lumberjack</span> Erkek Su Geçirmez Bot Erkek Bot
+                                Ayakkabı Lmbr110siyah</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(37)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="crossedText" style="padding-right: 10px;">1.430,70
+                                    TL</span><span class="price">1.406,57 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image4"></a>
+                            <a><span style="font-weight: 500;">Dark Shoes</span>Unisex Air Frce Ortopedik Rahat Günlük
+                                Beyaz...</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star" style="color: gray;"></i><i
+                                    class="fa-solid fa-star" style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(1672)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 14 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="price">183 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az Öde
+                                </span></span>
+                        </li>
+                    </ul>
+                    <ul class="productRow">
+                        <li><a href="/product.html" id="image1"></a>
+                            <a><span style="font-weight: 500;">Pro Hyper</span> Laci Erkek Rahat Günlük Sneaker</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(557)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 14 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="price">209,77 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image2"></a>
+                            <a><span style="font-weight:500 ;">Muggo</span>North Unisex Garantili Kışlık Trekking
+                                Outdoor Sneaker Ayakkabı</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(1584)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <!-- <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün
+                                                                        En
+                                                                        Düşük Fiyatı!</a> -->
+                            <a class="priceLeft"><span class="price" style="color: var(--bg-warning);">399,90
+                                    TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image3"></a>
+                            <a><span style="font-weight: 500;">Lumberjack</span> Erkek Su Geçirmez Bot Erkek Bot
+                                Ayakkabı Lmbr110siyah</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(37)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="crossedText" style="padding-right: 10px;">1.430,70
+                                    TL</span><span class="price">1.406,57 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image4"></a>
+                            <a><span style="font-weight: 500;">Dark Shoes</span>Unisex Air Frce Ortopedik Rahat Günlük
+                                Beyaz...</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star" style="color: gray;"></i><i
+                                    class="fa-solid fa-star" style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(1672)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 14 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="price">183 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                    </ul>
+                    <ul class="productRow">
+                        <li><a href="/product.html" id="image1"></a>
+                            <a><span style="font-weight: 500;">Pro Hyper</span> Laci Erkek Rahat Günlük Sneaker</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(557)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 14 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="price">209,77 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image2"></a>
+                            <a><span style="font-weight:500 ;">Muggo</span>North Unisex Garantili Kışlık Trekking
+                                Outdoor Sneaker Ayakkabı</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(1584)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <!-- <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün
+                                                                                            En
+                                                                                            Düşük Fiyatı!</a> -->
+                            <a class="priceLeft"><span class="price" style="color: var(--bg-warning);">399,90
+                                    TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image3"></a>
+                            <a><span style="font-weight: 500;">Lumberjack</span> Erkek Su Geçirmez Bot Erkek Bot
+                                Ayakkabı Lmbr110siyah</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(37)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="crossedText" style="padding-right: 10px;">1.430,70
+                                    TL</span><span class="price">1.406,57 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image4"></a>
+                            <a><span style="font-weight: 500;">Dark Shoes</span>Unisex Air Frce Ortopedik Rahat Günlük
+                                Beyaz...</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star" style="color: gray;"></i><i
+                                    class="fa-solid fa-star" style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(1672)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 14 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="price">183 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                    </ul>
+                    <ul class="productRow">
+                        <li><a href="/product.html" id="image1"></a>
+                            <a><span style="font-weight: 500;">Pro Hyper</span> Laci Erkek Rahat Günlük Sneaker</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(557)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 14 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="price">209,77 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image2"></a>
+                            <a><span style="font-weight:500 ;">Muggo</span>North Unisex Garantili Kışlık Trekking
+                                Outdoor Sneaker Ayakkabı</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(1584)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <!-- <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün
+                                                                                                                En
+                                                                                                                Düşük Fiyatı!</a> -->
+                            <a class="priceLeft"><span class="price" style="color: var(--bg-warning);">399,90
+                                    TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image3"></a>
+                            <a><span style="font-weight: 500;">Lumberjack</span> Erkek Su Geçirmez Bot Erkek Bot
+                                Ayakkabı Lmbr110siyah</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(37)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="crossedText" style="padding-right: 10px;">1.430,70
+                                    TL</span><span class="price">1.406,57 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                        <li><a href="/product.html" id="image4"></a>
+                            <a><span style="font-weight: 500;">Dark Shoes</span>Unisex Air Frce Ortopedik Rahat Günlük
+                                Beyaz...</a>
+                            <span class="priceLeft"><i class="fa-solid fa-star"
+                                    style="color: #f0b000; padding-left: 10px;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star"
+                                    style="color: #f0b000;"></i><i class="fa-solid fa-star" style="color: gray;"></i><i
+                                    class="fa-solid fa-star" style="color: gray;"></i><span
+                                    style="color:var(--bg-gray); padding: 0 5px;">(1672)</span> <i
+                                    class="fa-solid fa-camera-retro" style="color: #000000;"></i></span>
+                            <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 14 Günün
+                                En
+                                Düşük Fiyatı!</a>
+                            <a class="priceLeft"><span class="price">183 TL</span></a>
+                            <span
+                                style="display: flex; justify-content: space-between; width: 90%; margin-bottom: 10px;">
+                                <span
+                                    style="background-color: rgb(248, 226, 230, .5); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-ticket"
+                                        style="color: rgb(240, 23, 124); padding-right: 5px;"></i>Kupon
+                                    Fırsatı</span><span
+                                    style="background-color: rgba(247, 197, 182, 0.3); padding: 2px 5px; border-radius: 5%; font-size: 12px;"><i
+                                        class="fa-solid fa-tag fa-flip-horizontal"
+                                        style="color: #ff9500; padding: 0 0 0 5px;"></i>Çok Al Az
+                                    Öde
+                                </span></span>
+                        </li>
+                    </ul>
+
 
                 </div>
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                            <li><a href="/">Kadın</a></li>
-                            <li><a href="/">Erkek</a></li>
-                            <li><a href="/">Anne & Çocuk</a></li>
-                            <li><a href="/">Ev & Mobilya</a></li>
-                            <li><a href="/">Süpermarket</a></li>
-                            <li><a href="/">Kozmetik</a></li>
-                            <li><a href="/">Ayakkabı & Çanta</a></li>
-                            <li><a href="/">Elektronik</a></li>
-                            <li><a href="/">Spor&Outdoor</a></li>
-                            <li><a href="/">Çok Satanlar</a></li>
-                            <li><a href="/">Flaş Ürünler</a></li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
-        </header>
-        <hr class="hr1">
-        <main>
+            <hr class="hr2">
+            <div class="bottomText">
+                <h2>Tüm İhtiyaçlarınız İçin Tek İhtiyacınız Trendyol!</h2>
+                <p>Türkiye’nin önemli online alışveriş adreslerinden biri olan Trendyol, 2010 yılında modayı herkes için
+                    ulaşılabilir
+                    kılmak amacıyla kuruldu. O günden bugüne giyimden aksesuara, ayakkabıdan kozmetiğe kadar pek çok
+                    ürünle beğeni kazanmaya
+                    devam ediyor. Trendyol hem farklı zevklere hem de bütçelere hitap eder. Kolay ve güvenli bir deneyim
+                    sunar. Üst ve alt
+                    giyim kategorilerinde sayısız model üretir ve sunar. Bu koleksiyonlar uygun fiyat avantajıyla
+                    sunulur. Her mevsime uygun
+                    ürün seçenekleri bulunur. Kışlık seçimlerde kazak, mont, hırka, ceket gibi ürünler baskınken yaz
+                    kombinlerinde renkli ve
+                    sade tişört modelleri sıklıkla kullanılır. İnce kumaştan üretilen jeanlar ve kapriler de yine yaz
+                    ayları için ideal bir
+                    seçimler olarak değerlendirilir. Yaz tatili için de bikini takımlarından satın alabilirsiniz. Geniş
+                    beden aralığı
+                    sayesinde istediğiniz ürünü tercih edebilirsiniz.</p>
+                <h3>Modern Tasarımlarıyla Dikkat Çeken Trendyol Markaları</h3>
+                <p>Kıyafet kombinleri seçilen ayakkabıyla tamamlanır. Günlük ayakkabı, spor ayakkabı, topuklu ayakkabı,
+                    sandalet, bot ve
+                    çizme olmak üzere geniş bir ürün skalası hazırlanır. Kıyafet tasarımları ise hedef kitlenin
+                    beklentilerine göre
+                    şekillendirilir. Elbiseden gömleğe, tunikten eşofman takımına kadar pek çok kategoride üretim
+                    yapılır. Sade, modern,
+                    kaliteli ve şık tasarımlar ilgiyle takip edilir. Sezonun trend renkleri ve modelleri hazırlanan
+                    kreasyonlarda
+                    hissedilir. Üretici markalar çocuklar için farklı tasarımlara imza atarlar. Birbirinden rahat,
+                    renkli ve eğlenceli
+                    modeller hazırlanır. Kız ve erkek çocukları için farklı kategoriler bulunur. Mevcut çeşitlilik
+                    beklentilerin
+                    karşılanması noktasında önemlidir. Giyim markaları arasından kendiniz veya çocuğunuz için ideal
+                    ürünleri seçebilirsiniz.</p>
+                <h3>Trendyol Özel Gün İndirimleriyle Kaçırılmayacak Fırsatlar</h3>
+                <p>Toplumdaki sosyal bilincin oluşmasına katkı sağlayan Trendyol, Sepette İyilik uygulamasıyla farklı
+                    kategorilerde
+                    faaliyet gösteren sivil toplum kuruluşlarına ait ürünlerin satışını yapar. Böylece yardım zinciri
+                    oluşturulur. Yapılan
+                    tüm alışverişlerde avantaj elde etmek için ise devreye Trendyol Elite fırsatı girer. Özel hizmet ve
+                    ayrıcalıklar ilgi
+                    çekici bulunur. Bu ayrıcalıkları kullanarak mutfak alışverişinizi Trendyol Hızlı Market ile
+                    yapabilirsiniz. Temel
+                    gıdadan atıştırmalıklara, sebzeden meyveye pek çok kategoride istediğiniz ürünleri hızlı market ile
+                    bulabilirsiniz.
+                    Evden çıkmadan yapacağınız mutfak alışverişi yanında Trendyol Yemek ile de akşam yemeklerinizi
+                    pratik şekilde
+                    halledebilirsiniz. Yoğun iş temposunda yapamadığınız akşam yemeklerini bu uygulama sayesinde dert
+                    etmenize gerek kalmaz.
+                    Trendyol Efsane Günler sayesinde indirim fırsatlarını değerlendirmek mümkündür. Aynı şekilde Black
+                    Friday zamanı da
+                    sıklıkla değerlendirilir. Trendyol'un müşterilerine sunduğu tüm kampanyalara Trendyol İndirim
+                    Günleri sayfasından
+                    erişebilirsiniz. Alışverişiniz sonrası ürünün elinize ulaşmasını günlerce beklemek istemiyorsanız
+                    alışverişiniz
+                    sırasında Trendyol teslimat noktası ile "Gel-Al" seçeneğini kullanabilirsiniz.</p>
+                <h3>Modaya Uygun Trend Parçalar</h3>
+                <p>Ev yaşam ürünlerinde, giyimde, kozmetikte, elektronikte, oyuncu ekipmanlarında, pratik mutfak
+                    eşyalarında, bebek & çocuk
+                    ürünlerinde ve süpermarket kategorilerinde yapacağınız alışverişlerde uygun fiyat avantajından
+                    yararlanabilirsiniz. Mega
+                    Eylül ile sezonun moda kıyafetlerini ve evinizin ihtiyaçlarını tamamlayabilirsiniz. Yaz tatilinin
+                    bitmesiyle başlayan
+                    okul telaşı okula dönüş kampanyası ile sorun olmaktan çıkar. Okul öncesi, ilkokul, ortaokul, lise,
+                    üniversite olarak
+                    kategorilere ayrılan kırtasiye ürünleri ihtiyaçların karşılanması için listelenir. Büyük Bahar
+                    Kampanyası ile yaza
+                    hazırlık yapabilirsiniz. Kış hazırlıklarınızı da Büyük Ekim Kampanyası ile tamamlayabilirsiniz.
+                    Yapılan indirimlerde yer
+                    alan ürün çeşitliliği oldukça fazladır. Gram altın seçeneklerine dahi ulaşmak mümkündür. Hediye veya
+                    yatırım amaçlı
+                    üretilen çeşitler mevcuttur. Çeyrek altın sık tercih edilen altın ürünlerinin başında gelir.</p>
+                <h3>Elektronik Eşyalarda Uygun Fiyatlar</h3>
+                <p>Ayakkabı & Çanta ürünleri ile günlük kombinlere şıklık katmak mümkündür. Sneaker, casual, topuklu
+                    ayakkabı, bot, çizme,
+                    kol ve sırt çantası modelleri başta olmak üzere geniş bir tasarım yelpazesi oluşturulur. Spor &
+                    Outdoor kategorisinde
+                    yer alan parçalar da aynı şekilde sahip oldukları çeşitlilikle dikkat çekerler. Giyim eşyaları ve
+                    ekipmanlar farklı
+                    başlıklar altında gruplandırılır. Yapılan gruplandırmada hedef kitlenin özellikleri belirleyici
+                    kriter olarak kabul
+                    edilir. İlgili kategoride farklı markaların ürünlerinin olması öncelikle seçim kolaylığı sağlar.
+                    Sonraki aşamada ise
+                    farklı bütçelere hitap edilmesini destekler. Karar aşamasında kişinin üründen ne beklediğini
+                    belirlemesi gerekir. Ayrıca
+                    kaliteli markaların tercih edilmesi, kullanım konforu açısından önemlidir. Üretim aşamasında seçilen
+                    malzemelerin,
+                    tasarım çizgilerinin ve işçiliğin göz önüne alınması tavsiye edilir. Nitelikli ürün seçimi sayesinde
+                    kullanım konforu
+                    yükselir. Hem kendiniz hem de sevdikleriniz için tercihinizi rahat, şık ve kaliteli modellerden yana
+                    kullanabilirsiniz.</p>
+                <h3>Tüm Dünyanın İhtiyaçları Trendyol’da!</h3>
+                <p>Ev & Mobilya kategorisinde yer alan ev tekstili, sofra & mutfak, aydınlatma, banyo, ev dekorasyon,
+                    mobilya, ev
+                    gereçleri, hobi, kırtasiye & ofis, oto & motosiklet ürünlerini indirim günlerinde yapılan
+                    kampanyalarla uygun fiyata
+                    satın alabilirsiniz. Bu kategori, yeni evlenecek çiftler ve evini yenilemek isteyenler için farklı
+                    markaları ve ürün
+                    çeşitlerini bir arada sunar. Bu sayede ihtiyaçlar kolay bir şekilde tamamlanır. Elektronik kategori
+                    içerisinde ise beyaz
+                    eşya, küçük ev aletleri, Tv & görüntü, ses, giyilebilir teknoloji, tablet & bilgisayar, elektronik
+                    aksesuarlar, kişisel
+                    bakım aletleri, oyunculara özel ürünler yer alır. İlgili başlık altında satılan akıllı cep
+                    telefonları da geniş model
+                    yelpazeleri ile ön plana çıkar. iPhone 11 sıklıkla tercih edilen cihazların başında gelir. iPhone 11
+                    Pro Max modeli de
+                    tasarımı ve yüksek performansıyla dikkat çeker. Dikkat çeken bir diğeri ise iPhone 12 Pro Max
+                    modelidir ve teknik
+                    özellikleri sayesinde adından sıkça söz ettirir. Model çeşitliliği fiyat noktasında da kendini
+                    gösterir. İndirim
+                    günlerini takip ederek yapılan ayrıcalıklardan yararlanabilirsiniz. Kişisel bakımınızı da kozmetik
+                    kategorisinde yer
+                    alan makyaj, cilt bakımı, parfüm & deodorant, saç bakımı, epilasyon & tıraş ve genel bakım ürünleri
+                    sayesinde yerine
+                    getirebilirsiniz. Marka çeşitliliği bu kategori için de geçerlidir. Teknolojik ürünlerin haricinde
+                    hazırlanan Saat &
+                    Aksesuar grubu da ilgiyle takip edilir. Kadın, erkek ve çocuklar için üretilen birçok tasarım
+                    mevcuttur.</p>
+                <h3>En Yeni Ürünlerle İlginizi Çekebilecek Kategoriler</h3>
+                <a href="/">22 Ayar Bilezik</a><span>|</span>
+                <a href="/">Akıllı Saat</a><span>|</span>
+                <a href="/">Bluetooth Kulaklık</a><span>|</span>
+                <a href="/">Telefon</a><span>|</span>
+                <a href="/">Elektrikli Scooter</a><span>|</span>
+                <a href="/">Laptop</a><span>|</span>
+                <a href="/">Robot Süpürge</a><span>|</span>
+                <a href="/">Bisiklet</a><span>|</span>
+                <a href="/">Çamaşır Makinesi</a><span>|</span>
+                <a href="/">Iphone Xr</a><span>|</span>
+                <a href="/">Abiye Elbise</a><span>|</span>
+                <a href="/">Tablet</a><span>|</span>
+                <a href="/">Erkek Mont</a><span>|</span>
+                <a href="/">Xiaomi Redmi Note 8</a><span>|</span>
+                <a href="/">Spor Ayakkabı</a><span>|</span>
+                <a href="/">Çalışma Masası</a><span>|</span>
+                <a href="/">Buzdolabı</a><span>|</span>
+                <a href="/">Kulaklık</a><span>|</span>
+                <a href="/">Protein Tozu</a><span>|</span>
+                <a href="/">Blazer Ceket</a>
+            </div>
+            <hr class="hr1">
+            <ul class="brandHeaders">
+                <li>
+                    <h2 style="padding-left: 82px;">Popüler Marka ve Mağazalar</h2>
+                </li>
+
+                <li>
+                    <h2>Popüler Sayfalar</h2>
+                </li>
+            </ul>
+            <div class="brandList-wrap">
+                <ul class="brandList">
+                    <li>
+                        <ul>
+                            <li><a href="/">Penti</a></li>
+                            <li><a href="/">Watsons</a></li>
+                            <li><a href="/">Stradivarius</a></li>
+                            <li><a href="/">Columbia</a></li>
+                            <li><a href="/">Puma</a></li>
+                            <li><a href="/">Apple</a></li>
+                            <li><a href="/">Xiaomi</a></li>
+                            <li><a href="/">Birkenstock</a></li>
+                            <li><a href="/">Adidas</a></li>
+                            <li><a href="/">Lacoste</a></li>
+                            <li><a href="/">Madame Coco</a></li>
+                            <li><a href="/">Defacto</a></li>
+                            <li><a href="/">Tchibo</a></li>
+                            <li><a href="/">Network</a></li>
+                            <li><a href="/">Kiğılı</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="/">Mango</a></li>
+                            <li><a href="/">English Home</a></li>
+                            <li><a href="/">The North Face</a></li>
+                            <li><a href="/">Samsung</a></li>
+                            <li><a href="/">Mudo</a></li>
+                            <li><a href="/">Hummel</a></li>
+                            <li><a href="/">Oppo</a></li>
+                            <li><a href="/">Arçelik</a></li>
+                            <li><a href="/">Nike</a></li>
+                            <li><a href="/">Avva</a></li>
+                            <li><a href="/">Pull & Bear</a></li>
+                            <li><a href="/">Mavi</a></li>
+                            <li><a href="/">Farmasi</a></li>
+                            <li><a href="/">Bosch</a></li>
+                            <li><a href="/">Migros</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="/">Vivense</a></li>
+                            <li><a href="/">Bershka</a></li>
+                            <li><a href="/">Beymen</a></li>
+                            <li><a href="/">Lumberjack</a></li>
+                            <li><a href="/">Derimod</a></li>
+                            <li><a href="/">Huawei</a></li>
+                            <li><a href="/">Monster Notebook</a></li>
+                            <li><a href="/">DYSON</a></li>
+                            <li><a href="/">Skechers</a></li>
+                            <li><a href="/">Under Armour</a></li>
+                            <li><a href="/">Koton</a></li>
+                            <li><a href="/">Pierre Cardin</a></li>
+                            <li><a href="/">Helly Hansen</a></li>
+                            <li><a href="/">Karaca</a></li>
+                            <li><a href="/">CAT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="brandList">
+                    <li>
+                        <ul>
+                            <li><a href="/">Bluetooth Kulaklık</a></li>
+                            <li><a href="/">Azerbaycan'dan Alışveriş</a></li>
+                            <li><a href="/">Laptop</a></li>
+                            <li><a href="/">iPhone 15 Plus</a></li>
+                            <li><a href="/">Apple Watch</a></li>
+                            <li><a href="/">Buzdolabı</a></li>
+                            <li><a href="/">Öğrencilere Vergisiz...</a></li>
+                            <li><a href="/">Apple Watch Series 9</a></li>
+                            <li><a href="/">Erkek Mont</a></li>
+                            <li><a href="/">Kahve Makinesi</a></li>
+                            <li><a href="/">Oyuncu Koltuğu</a></li>
+                            <li><a href="/">Blender Seti</a></li>
+                            <li><a href="/">Apple Airpods</a></li>
+                            <li><a href="/">Akıllı Saat</a></li>
+                            <li><a href="/">Erkek Sweatshirt</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="/">iPhone</a></li>
+                            <li><a href="/">Nike Air Max</a></li>
+                            <li><a href="/">iPhone 15</a></li>
+                            <li><a href="/">iPhone 15 Pro</a></li>
+                            <li><a href="/">Çamaşır Makinesi</a></li>
+                            <li><a href="/">Öğrencilere Vergisiz...</a></li>
+                            <li><a href="/">11.11 Fırsatları</a></li>
+                            <li><a href="/">Termos</a></li>
+                            <li><a href="/">Black Friday Fırsatları</a></li>
+                            <li><a href="/">Elektrikli Battaniye</a></li>
+                            <li><a href="/">Elbise</a></li>
+                            <li><a href="/">Kadın Bot</a></li>
+                            <li><a href="/">Kuzine ve Sobalar</a></li>
+                            <li><a href="/">Macbook</a></li>
+                            <li><a href="/">Erkek Polar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="/">Samsung Cep Telefonu</a></li>
+                            <li><a href="/">Robot Süpürge</a></li>
+                            <li><a href="/">Soba & Isıtıcı</a></li>
+                            <li><a href="/">iPhone 15 Pro Max</a></li>
+                            <li><a href="/">Bulaşık Makinesi</a></li>
+                            <li><a href="/">Öğrencilere Vergisiz...</a></li>
+                            <li><a href="/">Sırt Çantası</a></li>
+                            <li><a href="/">Kadın Mont</a></li>
+                            <li><a href="/">Televizyon</a></li>
+                            <li><a href="/">Sneaker</a></li>
+                            <li><a href="/">Popüler Aramalar</a></li>
+                            <li><a href="/">Dyson Airwrap</a></li>
+                            <li><a href="/">Trendyol Blog</a></li>
+                            <li><a href="/">Trendyol English</a></li>
+                            <li><a href="/">Trendyol Deutsch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </main>
-                <footer>
-                    <div class="footerList-wrap">
-                        <div class="footerList">
-                            <div class="footerList-trendyol"><a href="">Trendyol</a>
-                                <ul>
-                                    <li><a href="/">Biz Kimiz</a></li>
-                                    <li><a href="/">Kariyer</a></li>
-                                    <li><a href="/">İletişim</a></li>
-                                    <li><a href="/">Trendyol'da Satış Yap</a></li>
-                                </ul>
-                            </div>
-                            <div class="footerList-about"><a href="">About us</a>
-                                <ul>
-                                    <li><a href="/">Who we are</a></li>
-                                    <li><a href="/">Careers</a></li>
-                                    <li><a href="/">Contact us</a></li>
-                                    <li><a href="/">Sustainability</a></li>
-                                </ul>
-                            </div>
-                            <div class="footerList-kampanya"><a href="">Kampanyalar</a>
-                                <ul>
-                                    <li><a href="/">Aktif Kampanyalar</a></li>
-                                    <li><a href="/">Elite Üyelik</a></li>
-                                    <li><a href="/">Hediye Fikirleri</a></li>
-                                    <li><a href="/">Trendyol Fırsatları</a></li>
-                                </ul>
-                            </div>
-                            <div class="footerList-yardım"><a href="">Yardım</a>
-                                <ul>
-                                    <li><a href="/">Sıkça Sorulan Sorular</a></li>
-                                    <li><a href="/">Canlı Yardım</a></li>
-                                    <li><a href="/">Nasıl İade Edebilirim</a></li>
-                                    <li><a href="/">İşlem Rehberi</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="copyright">&copy; Berkay Baransel BAYIR tarafından Wissen Akademie BAU Bright FS-2310-13
-                        sınıfının projesi olarak tasarlanmıştır. </div>
-                </footer>
+        <footer>
+            <div class="footerList">
+                <ul class="footerList-trendyol"><a href="">Trendyol</a>
+                    <li><a href="/">Biz Kimiz</a></li>
+                    <li><a href="/">Kariyer</a></li>
+                    <li><a href="/">İletişim</a></li>
+                    <li><a href="/">Trendyol'da Satış Yap</a></li>
+                    <li id="footerLi">Güvenli Alışveriş</li>
+                    <li id="footerIcon1"><img src="/images/footer-icon1.png" alt=""></li>
+                </ul>
+                <ul class="footerList-about"><a href="">About us</a>
+                    <li><a href="/">Who we are</a></li>
+                    <li><a href="/">Careers</a></li>
+                    <li><a href="/">Contact us</a></li>
+                    <li><a href="/">Sustainability</a></li>
+                    <li id="footerLi">Mobil Uygulamalar</li>
+                    <li id="footerIcon1"><img src="/images/footer-icon2.png" alt=""></li>
+                </ul>
+                <ul class="footerList-kampanya"><a href="">Kampanyalar</a>
+                    <li><a href="/">Aktif Kampanyalar</a></li>
+                    <li><a href="/">Elite Üyelik</a></li>
+                    <li><a href="/">Hediye Fikirleri</a></li>
+                    <li><a href="/">Trendyol Fırsatları</a></li>
+                    <li id="footerLi">Sosyal Medya
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footerList-yardım"><a href="">Yardım</a>
+                    <li><a href="/">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="/">Canlı Yardım</a></li>
+                    <li><a href="/">Nasıl İade Edebilirim</a></li>
+                    <li><a href="/">İşlem Rehberi</a></li>
+                    <li id="footerLi2"><a href="#">Ülke Değiştir</a></li>
+                    <li id="footerIcon1"><img src="/images/footer-icon3.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="copyright">&copy; Berkay Baransel BAYIR tarafından Wissen Akademie BAU Bright FS-2310-13
+                sınıfının projesi olarak tasarlanmıştır. </div>
+        </footer>
     </div>
 </body>
 
