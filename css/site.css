@@ -427,24 +427,27 @@ main {
     padding: 0 3px;
 }
 
+.brandHeaders {
+    width: 1200px;
+    padding: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandHeaders li {
+    width: 50%;
+}
+
+.brandHeaders h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 54px;
+}
+
 .brandList-wrap {
     width: 1200px;
     display: flex;
     justify-content: space-between;
-}
-
-.brandHeaders {
-    width: 1200px;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.brandHeaders h2 {
-    width: 50%;
-    font-size: 24px;
-    font-weight: 400;
-    padding-left: 82px;
 }
 
 .brandList {
@@ -454,6 +457,9 @@ main {
     line-height: 24px;
 }
 
+.brandList a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -497,6 +503,7 @@ footer {
 #footerLi {
     font-size: 16px;
     font-weight: 700;
+    color: white;
 }
 
 #footerLi>ul {
