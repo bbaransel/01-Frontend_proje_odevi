@@ -11,11 +11,11 @@
 body {
     font-family: "Source Sans 3";
     font-size: 13px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .container {
-    width: 100vw;
+    width: 99vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,21 +29,6 @@ a {
 
 ul {
     list-style-type: none;
-}
-
-header {
-    width: 100vw;
-}
-
-.headerMain {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    /* position: sticky; */
-
 }
 
 .headerTop {
@@ -77,13 +62,11 @@ header {
 }
 
 .stickyHeader {
-    width: 100vw;
+    width: 100%;
     height: 66px;
     background-color: white;
     position: sticky;
     top: 0;
-    /* padding-top: 20px; */
-    /* z-index: 1000; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,24 +118,22 @@ header {
     cursor: pointer;
 }
 
-.account-navbar {}
-
-.account-navbar ul {
+.account-navbar {
     display: flex;
     column-gap: 40px;
     justify-content: center;
     align-items: center;
 }
 
-.account-navbar ul li a {
+.account-navbar li a {
     color: var(--text-black);
 }
 
-.account-navbar ul li a:hover {
+.account-navbar li a:hover {
     color: var(--bg-warning);
 }
 
-.account-navbar ul li i {
+.account-navbar li i {
     font-size: 16px;
     padding-right: 3px;
 }
@@ -160,9 +141,7 @@ header {
 .navbar {
     width: 1200px;
     height: 35px;
-    /* margin-top: 66px; */
     padding-top: 15px;
-    /* z-index: 1; */
 }
 
 .navbar ul {
@@ -192,12 +171,12 @@ header {
 
 .hr1 {
     margin-top: 15px;
-    width: 100vw;
+    width: 100%;
 }
 
 main {
-    margin-top: 50px;
-    width: 100vw;
+    margin-top: 30px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,15 +185,12 @@ main {
 
 .sliderList {
     width: 1200px;
-}
-
-.sliderList ul {
     display: flex;
     overflow-x: scroll;
     column-gap: 50px;
 }
 
-.sliderList ul li {
+.sliderList li {
     width: 150px;
     height: 120px;
     display: flex;
@@ -222,45 +198,41 @@ main {
     align-items: center;
 }
 
-.sliderList ul li a {
+.sliderList li a {
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
-.sliderList ul li a:hover {
+.sliderList li a:hover {
     color: var(--bg-warning);
 }
 
-.sliderList ul li a img {
+.sliderList li a img {
     width: 68px;
     height: 68px;
     border: .5px solid gray;
     border-radius: 50%;
 }
 
-.sliderList ul li a img:hover {
+.sliderList li a img:hover {
     border: 1px solid var(--bg-warning);
 }
 
 .mainCards {
     margin-top: 20px;
     width: 1200px;
-}
-
-.mainCards ul {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.mainCards ul li {
+.mainCards li {
     width: 23%;
     height: 35px;
 }
 
-.mainCards ul li a {
+.mainCards li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,16 +263,9 @@ main {
     background-color: rgb(247, 232, 205);
 }
 
-.productCards {
+.productList {
     margin-top: 50px;
     width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.productList {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,6 +324,7 @@ main {
     width: 1200px;
     background-image: url(/images/Product_Background_Product_Background_ILk_Gun_202311061125.webp);
     border-radius: 6px;
+    margin-top: 50px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -430,7 +396,63 @@ main {
     color: gray;
 }
 
+.hr2 {
+    width: 1200px;
+    margin-top: 50px;
+}
 
+.bottomText {
+    width: 1200px;
+}
+
+.bottomText h2 {
+    font-size: 23px;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+}
+
+.bottomText h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0 5px 0;
+}
+
+.bottomText p {
+    line-height: 24px;
+    font-size: 13px;
+    text-align: justify
+}
+
+.bottomText span {
+    padding: 0 3px;
+}
+
+.brandList-wrap {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandHeaders {
+    width: 1200px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandHeaders h2 {
+    width: 50%;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 82px;
+}
+
+.brandList {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 24px;
+}
 
 
 
@@ -438,7 +460,7 @@ main {
 footer {
     padding: 50px 0 0 0;
     margin-top: 50px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -447,23 +469,18 @@ footer {
     bottom: 0;
 }
 
-.footerList-wrap {
+.footerList {
     width: 1200px;
     display: flex;
     justify-content: space-between;
 }
 
-.footerList {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footerList div {
+.footerList ul {
     width: 20%;
+    line-height: 40px;
 }
 
-.footerList div>a {
+.footerList ul>a {
     font-size: 24px;
     font-weight: 700;
     color: white;
@@ -473,15 +490,7 @@ footer {
     text-decoration: underline;
 }
 
-.footerList ul {
-    line-height: 40px;
-}
-
-.footerList ul li {
-    color: white;
-}
-
-.footerList ul li a {
+.footerList li a {
     color: white;
 }
 
@@ -509,7 +518,7 @@ footer {
 }
 
 .copyright {
-    width: 100vw;
+    width: 100%;
     font-size: 11px;
     color: white;
     bottom: 0;
