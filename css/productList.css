@@ -13,7 +13,7 @@
 }
 
 .contentLeft {
-    width: 240px;
+    width: 200px;
     height: 1500px;
     float: left;
     display: flex;
@@ -76,12 +76,13 @@
 }
 
 .contentRight {
-    width: 80%;
+    width: 78%;
     float: right;
+    margin-left: 15px;
 }
 
 .path-header {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,6 +92,8 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(131, 130, 130, .3);
 }
 
 .tags i {
