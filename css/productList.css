@@ -14,18 +14,22 @@
 
 .contentLeft {
     width: 200px;
-    height: 1500px;
+    height: 1400px;
     float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     row-gap: 10px;
     overflow: scroll;
     overflow-x: hidden;
 }
 
+.contentLeft::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .cat1 {
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 216px;
     line-height: 20px;
     margin: 0 0 20px 0;
@@ -82,7 +86,6 @@
 }
 
 .path-header {
-    /* margin-left: 10px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
